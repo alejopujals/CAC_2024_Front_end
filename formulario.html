@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Inscripción</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="">Quiénes somos</a>
+            <a href="">Deportes</a>
+            <a href="">Villa Luro Solidario</a>
+            <a href="">Biblioteca</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Creo el formulario -->
+        <form action="" class="formulario" id="formulario">
+
+            <!-- Grupo 'nombre'(label + input + ícono + mensaje de eror) -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" id="nombre" name="nombre"
+                        placeholder="Escribí acá tu nombre..." required>
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El nombre solo puede contener letras</p>
+            </div>
+
+            <!-- Grupo 'apellido' -->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellido</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" id="apellido" name="apellido"
+                        placeholder="Escribí acá tu apellido..." required>
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El apellido solo puede contener letras</p>
+            </div>
+
+            <!-- Grupo 'dni' -->
+            <div class="formulario__grupo" id="grupo__dni">
+                <label for="dni" class="formulario__label">DNI</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" id="dni" name="dni" min="10000000" required>
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Debe incluir su número de DNI</p>
+            </div>
+
+            <!-- Grupo 'fecha_nacimiento' -->
+            <div class="formulario__grupo" id="grupo__fecha_nacimiento">
+                <label for="fecha_nacimiento" class="formulario__label">Fecha de nacimiento</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <input type="date" class="formulario__input" id="fecha_nacimiento" name="fecha_nacimiento"
+                        max="2024-04-20" required>
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Campo obligatorio</p>
+            </div>
+
+            <!-- Grupo 'correo' -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo electrónico</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" id="correo" name="correo"
+                        placeholder="email@email.com" required>
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y
+                    guión bajo</p>
+            </div>
+
+            <!-- Grupo 'telefono' -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="11xxxxxxxx"
+                        required>
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El teléfono solo puede contener números</p>
+            </div>
+
+            <!-- Grupo 'deporte' -->
+            <div class="formulario__grupo" id="grupo__deporte">
+                <label for="deporte" class="formulario__label">Deporte de interés</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <select class="formulario__input" name="deporte" id="deporte">
+                        <option value="">Seleccioná aquí</option>
+                        <option value="futbol">Fútbol</option>
+                        <option value="voley">Voley</option>
+                        <option value="natacion">Natación</option>
+                        <option value="patin">Patín artístico</option>
+                        <option value="gimnasia">Gimnasia artística</option>
+                        <option value="musculacion">Musculación (aparatos)</option>
+                        <option value="danza">Danzas</option>
+                    </select>
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Debés seleccionar el deporte en el que te querés inscribir</p>
+            </div>
+
+            <!-- Grupo 'categoria' -->
+            <div class="formulario__grupo" id="grupo__categoria">
+                <label for="categoria" class="formulario__label">Categoria</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <input type="radio" name="genero" value="femenino"> Femenino
+                    <input type="radio" name="genero" value="masculino"> Masculino
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Debés seleccionar una categoría</p>
+            </div>
+
+            <!-- Grupo imagen -->
+            <div class="formulario__grupo" id="grupo__imagen">
+                <label for="imagen" class="formulario__label">Adjuntá tu DNI</label>
+                <!-- Encierro dentro de un 'div' el input y el ícono -->
+                <div class="formulario__grupo-input">
+                    <input type="file" class="formulario__input" id="imagen" name="imagen" required>
+                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Adjuntá una foto del frente de tu DNI</p>
+            </div>
+
+            <!-- Términos y condiciones -->
+            <div class="formulario__grupo formulario__checkbox" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones.
+                </label>
+            </div>
+
+            <!-- Mensaje de error -->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><b> Atención:</b> Hay campos que no han sido
+                    completados correctamente!</p>
+            </div>
+
+            <!-- Botones enviar / borrar -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Inscribir</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Tu inscripción se ha realizado
+                    correctamente!</p>
+            </div>
+
+        </form>
+    </main>
+
+    <footer></footer>
+
+    <!-- Script de JS para la validación de los inputs -->
+    <script src="./js/script.js"></script>
+
+    <!-- Kit de 'Font Awesome' que da acceso a los íconos -->
+    <script src="https://kit.fontawesome.com/32e74fe283.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

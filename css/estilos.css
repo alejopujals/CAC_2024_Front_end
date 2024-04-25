@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+/*----------------------- Estilos del formulario de inscripción -------------------*/
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 40px;
+    padding: 0 40px 0 10px;
+    transition: 0.3s ease all;
+}
+
+/* Estilos del formulario de inscripción / Input seleccionado */
+.formulario__input:focus {
+    border: 3px solid rgb(96, 27, 32);
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+/* Estilos del formulario de inscripción / Mensajes de error debajo de cada input */
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+/*  Estilos del formulario de inscripción / Íconos de error */
+.formulario__validadcion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
+.formulario__checkbox,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+/*  Estilos del formulario de inscripción / Mensaje cuando no hay error (no se muestra) */
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: #bb2929;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+/*  Estilos del formulario de inscripción / Mensaje cuando hay un error (se muestra) */
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  Estilos del formulario de inscripción / Botón */
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 50%;
+    background-color: rgb(96, 27, 32);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    font-size: 16px;
+}
+
+.formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+/* Estilos del formulario de inscripción / Mensaje de éxito */
+.formulario__mensaje-exito {
+    font-size: 16px;
+    color: #1ed12d;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+/* Estilos del formulario de inscripción / Estilos para validación */
+/* Cuando se rellenó correctamente */
+.formulario__grupo-correcto .formulario__validadcion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+/* Cuando NO se rellenó correctamente */
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validadcion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+/* Borde */
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+/* Mediaqueries (modificación de acuerdo al tamaño de la pantalla) */
+/* Para pantallas de menos de 800px de ancho, determino que se vea 1 sola columna */
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hago que el checkbox, el mensaje y el boton, ocupen una sola columna */
+    .formulario__checkbox,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+    /* Botón de un 100% de la pantalla de ancho */
+    .formulario__btn {
+        width: 100%;
+    }
+}
+
+/*----------------------- Aquí terminan losEstilos del formulario de inscripción -------------------*/
