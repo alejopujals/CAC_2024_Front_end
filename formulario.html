@@ -32,10 +32,10 @@
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" id="nombre" name="nombre"
-                        placeholder="Escribí acá tu nombre..." required>
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                        placeholder="Escribí acá tu nombre...">
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
-                <p class="formulario__input-error">El nombre solo puede contener letras</p>
+                <p class="formulario__input-error">Atención: El nombre solo puede contener letras.</p>
             </div>
 
             <!-- Grupo 'apellido' -->
@@ -44,10 +44,10 @@
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" id="apellido" name="apellido"
-                        placeholder="Escribí acá tu apellido..." required>
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                        placeholder="Escribí acá tu apellido...">
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
-                <p class="formulario__input-error">El apellido solo puede contener letras</p>
+                <p class="formulario__input-error">Atención: El apellido solo puede contener letras.</p>
             </div>
 
             <!-- Grupo 'dni' -->
@@ -56,9 +56,9 @@
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
                     <input type="number" class="formulario__input" id="dni" name="dni" min="10000000" required>
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
-                <p class="formulario__input-error">Debe incluir su número de DNI</p>
+                <p class="formulario__input-error">Atención: El DNI solo puede contener números (no agregar puntos)</p>
             </div>
 
             <!-- Grupo 'fecha_nacimiento' -->
@@ -67,8 +67,8 @@
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
                     <input type="date" class="formulario__input" id="fecha_nacimiento" name="fecha_nacimiento"
-                        max="2024-04-20" required>
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                        max="2024-04-20">
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Campo obligatorio</p>
             </div>
@@ -80,10 +80,9 @@
                 <div class="formulario__grupo-input">
                     <input type="email" class="formulario__input" id="correo" name="correo"
                         placeholder="email@email.com" required>
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
-                <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y
-                    guión bajo</p>
+                <p class="formulario__input-error">Atención: Introduce un e-mail válido (solo puede contener letras, números, puntos, guiones y guión bajo. Debe contener @ y punto).</p>
             </div>
 
             <!-- Grupo 'telefono' -->
@@ -91,11 +90,11 @@
                 <label for="telefono" class="formulario__label">Teléfono</label>
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
-                    <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="11xxxxxxxx"
+                    <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="11 xxxx xxxx"
                         required>
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
-                <p class="formulario__input-error">El teléfono solo puede contener números</p>
+                <p class="formulario__input-error">Atención: Solo puede contener números. No incluir espacios ni guiones.</p>
             </div>
 
             <!-- Grupo 'deporte' -->
@@ -113,7 +112,7 @@
                         <option value="musculacion">Musculación (aparatos)</option>
                         <option value="danza">Danzas</option>
                     </select>
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Debés seleccionar el deporte en el que te querés inscribir</p>
             </div>
@@ -125,7 +124,7 @@
                 <div class="formulario__grupo-input">
                     <input type="radio" name="genero" value="femenino"> Femenino
                     <input type="radio" name="genero" value="masculino"> Masculino
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Debés seleccionar una categoría</p>
             </div>
@@ -136,7 +135,7 @@
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
                     <input type="file" class="formulario__input" id="imagen" name="imagen" required>
-                    <i class="formulario__validadcion-estado fa-solid fa-square-xmark"></i>
+                    <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Adjuntá una foto del frente de tu DNI</p>
             </div>
@@ -157,7 +156,7 @@
 
             <!-- Botones enviar / borrar -->
             <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button type="submit" class="formulario__btn">Inscribir</button>
+                <button type="submit" class="formulario__btn">Confirmar inscripción</button>
                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Tu inscripción se ha realizado
                     correctamente!</p>
             </div>
