@@ -33,6 +33,13 @@ main {
     padding: 40px;
 }
 
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5 vw; 
+    background-color: var(--primary-color);
+    
+}
+
 
 /* Estilo del header */
 .header {
@@ -55,7 +62,7 @@ nav{
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo del boton */
+/* Estilo del boton Inscripción*/
 .btn-cac{
     background-color: var(--bg-color);
     padding: 10px;
@@ -66,61 +73,24 @@ nav{
 
 }
 
+#logo:hover { 
+    animation: tilt-n-move-shaking 0.25s infinite; 
+}
+ @keyframes tilt-n-move-shaking {
+     0% { transform: translate(0, 0) rotate(0deg); } 
+     25% { transform: translate(5px, 5px) rotate(5deg); } 
+     50% { transform: translate(0, 0) rotate(0deg); } 75% { transform: translate(-5px, 5px) rotate(-5deg); } 
+     100% { transform: translate(0, 0) rotate(0deg); } }
+
 /* Estilos portada */
 
 .Intro-texto {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.5vw;
     margin: 10px auto 0;
 }
 
-.Intro-slide {
-    width: 100%;
-    height: auto;
-    margin: 10px auto 0;
-    overflow: hidden;
-
-    animation: slides 16s infinite alternate ease-in-out;
-}
-
-
-.Intro-slide ul {
-    display: flex;
-    padding: 0;
-    /* width: 400%; */
-}
-
-.Intro-slide li {
-    list-style: none;
-    width: 100%;
-}
-
-.Intro-slide img {
-    width: 100%;
-}
-
-/* @keyframes slides {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
-} */
-/* {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
-  } */
 
 
 
@@ -302,14 +272,18 @@ nav{
 /* Estilos para últimas noticias */
 
 .noticias {
-    max-width: 68.75rem;
+    /* max-width: 68.75rem; */
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 20px;
+    justify-content: center;
   }
 
 .últimas-noticias{
     display: flex;
+    text-align: center;
+    justify-content: center;  
+    margin: 20px;
 }
 
 .fútbol-item{
@@ -331,6 +305,11 @@ nav{
     margin: 10px;
 }
 
+.fútbol-item-detail-info {
+    text-align: justify
+}
+
+
 .pileta-item{
     width: 300%;
     background-color: #fff;
@@ -347,6 +326,10 @@ nav{
 
 .pileta-item-detail-title {
     margin: 10px
+}
+
+.pileta-item-detail-info {
+    text-align: justify  
 }
 
 /* Ubicación. Mapas */
@@ -366,14 +349,112 @@ nav{
     height: 250px
 }
 
+/* Estilo Quiénes somos */
+
+.Info {
+    display: flex;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    justify-content: center;  
+    margin: 20px;
+    /* flex-direction: column; */
+
+}
+
+.Info-Img {
+    margin: 20px;
+
+}
+
+
+
+.Info-Img li {
+    /* flex-direction: column; */
+    list-style: none;
+    width: 200%;
+}
+
+.Info-Img img {
+    width: 100%;
+}
+
+.Info-club {
+    text-align: justify;
+    font-size: 1.5vw;
+    margin: 20px 0 0 100px;
+}
 
 
 /* Estilos Deportes */
 
 .deportes {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
-    /* padding: 20px; */
+    justify-content: center;  
     margin: 20px;
+    flex-direction: row;
+}
+
+.fútbol {
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.voley {
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.natación {
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.patín {
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.gimnasia {
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.musculación{
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.danzas{
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
 }
