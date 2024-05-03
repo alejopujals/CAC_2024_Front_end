@@ -1,0 +1,379 @@
+/* Selector de colores institucionales */
+:root {
+    --bg-color: lightgrey;
+    --primary-color: rgb(96, 27, 32);
+    --error-color: #bb2929;
+    --ok-color: #1ed12d;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 40px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* Elimina el subrayado de los hipervínculos */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+
+/* Estilo del header */
+.header {
+    background-color: var(--primary-color);
+    color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+    padding: 20px;
+    opacity: .8;
+}
+
+/* Estilo para la barra de navegación */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del boton */
+.btn-cac{
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer; /*aparece manito*/
+    text-align: center;
+
+}
+
+/* Estilos portada */
+
+.Intro-texto {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px auto 0;
+}
+
+.Intro-slide {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
+
+    animation: slides 16s infinite alternate ease-in-out;
+}
+
+
+.Intro-slide ul {
+    display: flex;
+    padding: 0;
+    /* width: 400%; */
+}
+
+.Intro-slide li {
+    list-style: none;
+    width: 100%;
+}
+
+.Intro-slide img {
+    width: 100%;
+}
+
+/* @keyframes slides {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+} */
+/* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  } */
+
+
+
+/*----------------------- Estilos del formulario de inscripción -------------------*/
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 40px;
+    padding: 0 40px 0 10px;
+    transition: 0.3s ease all;
+    font-size: 14px;
+}
+
+/* Estilos del formulario de inscripción / Input seleccionado */
+.formulario__input:focus {
+    border: 3px solid var(--ok-color);
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+/* Estilos del formulario de inscripción / Mensajes de error debajo de cada input */
+.formulario__input-error {
+    font-size: 12px;
+    margin: 8px 0 0 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+/*  Estilos del formulario de inscripción / Íconos de error */
+.formulario__validadcion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
+.formulario__checkbox,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+/*  Estilos del formulario de inscripción / Mensaje cuando no hay error (no se muestra) */
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: var(--error-color);
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+/*  Estilos del formulario de inscripción / Mensaje cuando hay un error (se muestra) */
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  Estilos del formulario de inscripción / Botón */
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 50%;
+    background-color: var(--primary-color);
+    opacity: .8;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    font-size: 16px;
+}
+
+.formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+/* Estilos del formulario de inscripción / Mensaje de éxito */
+.formulario__mensaje-exito {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    color: var(--ok-color);
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+/* Estilos del formulario de inscripción / Estilos para validación */
+/* Cuando se rellenó correctamente */
+.formulario__grupo-correcto .formulario__validadcion-estado {
+    color: var(--ok-color);
+    opacity: 1;
+}
+
+/* Cuando NO se rellenó correctamente */
+.formulario__grupo-incorrecto .formulario__label {
+    color: var(--error-color);
+}
+
+.formulario__grupo-incorrecto .formulario__validadcion-estado {
+    color:  var(--error-color);
+    opacity: 1;
+}
+
+/* Borde */
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid var(--error-color);
+}
+
+/* Mediaqueries (modificación de acuerdo al tamaño de la pantalla) */
+/* Para pantallas de menos de 800px de ancho, determino que se vea 1 sola columna */
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hago que el checkbox, el mensaje y el boton, ocupen una sola columna */
+    .formulario__checkbox,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+    /* Botón de un 100% de la pantalla de ancho */
+    .formulario__btn {
+        width: 100%;
+    }
+}
+
+/*----------------------- Aquí terminan losEstilos del formulario de inscripción -------------------*/
+
+/* Estilos del main */
+
+
+/* Estilos para últimas noticias */
+
+.noticias {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+.últimas-noticias{
+    display: flex;
+}
+
+.fútbol-item{
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.fútbol_img{
+    width: 100%;
+    height: 45%;
+    border-radius: 15px;
+}
+
+.fútbol-item-detail-title {
+    margin: 10px;
+}
+
+.pileta-item{
+    width: 300%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.pileta_img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.pileta-item-detail-title {
+    margin: 10px
+}
+
+/* Ubicación. Mapas */
+
+.Ubi {
+    display: flex;
+}
+
+.Ubicación {
+    margin: 30px;
+    text-align: left;
+}
+
+.Ubicación_mapa {
+    margin-top: 30px;
+    width: 250px;
+    height: 250px
+}
+
+
+
+/* Estilos Deportes */
+
+.deportes {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    /* padding: 20px; */
+    margin: 20px;
+}
