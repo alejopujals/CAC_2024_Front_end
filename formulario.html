@@ -55,7 +55,7 @@
                 <label for="dni" class="formulario__label">DNI</label>
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
-                    <input type="number" class="formulario__input" id="dni" name="dni" min="10000000" required>
+                    <input type="number" class="formulario__input" id="dni" name="dni" min="10000000">
                     <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Atención: El DNI solo puede contener números (no agregar puntos)</p>
@@ -79,7 +79,7 @@
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
                     <input type="email" class="formulario__input" id="correo" name="correo"
-                        placeholder="email@email.com" required>
+                        placeholder="email@email.com">
                     <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Atención: Introduce un e-mail válido (solo puede contener letras, números, puntos, guiones y guión bajo. Debe contener @ y punto).</p>
@@ -90,8 +90,7 @@
                 <label for="telefono" class="formulario__label">Teléfono</label>
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
-                    <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="11 xxxx xxxx"
-                        required>
+                    <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="11 xxxx xxxx">
                     <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Atención: Solo puede contener números. No incluir espacios ni guiones.</p>
@@ -102,7 +101,7 @@
                 <label for="deporte" class="formulario__label">Deporte de interés</label>
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
-                    <select class="formulario__input" name="deporte" id="deporte">
+                    <select class="formulario__input" name="deporte" id="deporte" required>
                         <option value="">Seleccioná aquí</option>
                         <option value="futbol">Fútbol</option>
                         <option value="voley">Voley</option>

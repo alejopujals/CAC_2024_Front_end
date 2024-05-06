@@ -59,6 +59,7 @@ const validarFormulario = (e) => {
     }
 }
 
+// La siguiente función es semejante a la de arriba pero permite ser aplicada a todos los inputs: 
 const validarCampo = (expresion, input, campo) => {
     if (expresion.test(input.value)) {
         document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
