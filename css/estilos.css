@@ -26,9 +26,9 @@ a {
     text-decoration: none;
 }
 
- a:hover { 
-    text-decoration: underline; 
-    color: var(--bg-color); 
+ a:hover {
+    text-decoration: underline;
+    color: var(--bg-color);
 }
 
 main {
@@ -44,20 +44,19 @@ main {
     opacity: .8;
 }
 
-#footer a { 
+#footer a {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5 vw; 
-    color: white; 
-    cursor: pointer; 
+    font-size: 1.2vw;
+    color: white;
+    cursor: pointer;
     padding-left: 45px;
-    /* padding-bottom: 100px;  */
-    text-decoration: none; 
+    text-decoration: none;
     align-items: center;
 }
 
-#footer a:hover { 
-    text-decoration: underline; 
-    color: var(--bg-color); 
+#footer a:hover {
+    text-decoration: underline;
+    color: var(--bg-color);
 }
 
 
@@ -93,27 +92,16 @@ nav{
 
 }
 
-#logo:hover { 
-    animation: tilt-n-move-shaking 0.25s infinite; 
-    text-decoration: none; 
-    color: black; 
+#logo:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+    text-decoration: none;
+    color: black;
 }
  @keyframes tilt-n-move-shaking {
-     0% { transform: translate(0, 0) rotate(0deg); } 
-     25% { transform: translate(5px, 5px) rotate(5deg); } 
-     50% { transform: translate(0, 0) rotate(0deg); } 75% { transform: translate(-5px, 5px) rotate(-5deg); } 
+     0% { transform: translate(0, 0) rotate(0deg); }
+     25% { transform: translate(5px, 5px) rotate(5deg); }
+     50% { transform: translate(0, 0) rotate(0deg); } 75% { transform: translate(-5px, 5px) rotate(-5deg); }
      100% { transform: translate(0, 0) rotate(0deg); } }
-
-/* Estilos portada */
-
-.Intro-texto {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 1.5vw;
-    margin: 10px auto 0;
-}
-
-
 
 
 /*----------------------- Estilos del formulario de inscripción -------------------*/
@@ -288,28 +276,55 @@ nav{
 
 /*----------------------- Aquí terminan losEstilos del formulario de inscripción -------------------*/
 
-/* Estilos del main */
+
+/* Estilos Home. Portada */
+
+.Intro-texto {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.Intro-img{
+    width: 100%;
+    border-radius: 15px;
+
+}
 
 
-/* Estilos para últimas noticias */
+/* Estilos para Home. Últimas noticias */
 
 .noticias {
-    /* max-width: 68.75rem; */
     margin: auto;
     text-align: center;
     margin-top: 20px;
     justify-content: center;
+
   }
+
+.noticias h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    background-color: var(--primary-color);
+    padding: 10px;
+    opacity: .8;
+    color: white;
+    border-radius: 5px;
+}
+
 
 .últimas-noticias{
     display: flex;
     text-align: center;
-    justify-content: center;  
+    justify-content: center;
     margin: 20px;
 }
 
 .fútbol-item{
     width: 300%;
+    height: 100%;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 3px 10px;
@@ -319,18 +334,21 @@ nav{
 
 .fútbol_img{
     width: 100%;
-    height: 45%;
+    /* height: 45%; */
     border-radius: 15px;
 }
 
 .fútbol-item-detail-title {
     margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
 }
 
 .fútbol-item-detail-info {
-    text-align: justify
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
 }
-
 
 .pileta-item{
     width: 300%;
@@ -347,14 +365,18 @@ nav{
 }
 
 .pileta-item-detail-title {
-    margin: 10px
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
 }
 
 .pileta-item-detail-info {
-    text-align: justify  
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
 }
 
-/* Ubicación. Mapas */
+/* Estilos Home. Ubicación. Mapas */
 
 .Ubi {
     display: flex;
@@ -363,6 +385,8 @@ nav{
 .Ubicación {
     margin: 30px;
     text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
 }
 
 .Ubicación_mapa {
@@ -371,47 +395,44 @@ nav{
     height: 250px
 }
 
-/* Estilo Quiénes somos */
-
-.Info {
-    display: flex;
-    /* flex-wrap: wrap; */
-    text-align: center;
-    justify-content: center;  
-    margin: 20px;
-    /* flex-direction: column; */
-
-}
-
-.Info-Img {
-    margin: 20px;
-
-}
-
-
-
-.Info-Img img {
-    width: 100%;
-}
+/* Estilo página Quiénes somos */
 
 .Info-club {
+    display: flex;
     text-align: justify;
     font-size: 1.5vw;
-    margin: 20px 0 0 100px;
+    margin: 20px 0 0 0;
 }
 
 
-/* Estilos Deportes */
+/* Estilos página Deportes */
 
 .deportes {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center;  
+    justify-content: center;
     margin: 20px;
     flex-direction: row;
     cursor: pointer;
 }
+
+.deportes h3 {
+    margin: 2px 0 2px 0;
+}
+.deportes a{
+    text-decoration: none;
+}
+
+h5 {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 2px 0 2px 0;
+}
+h5:hover {
+    color: var(--ok-color);
+}
+
 
 .fútbol {
     width: 300%;
@@ -474,4 +495,20 @@ nav{
     box-shadow: 0 3px 10px;
     padding: 20px;
     margin: 10px;
+}
+
+/* Estilos página Amigos solidarios */
+.Solidarios-info p{
+    text-align: justify;
+    margin: 20px;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+/* Estilos página Biblioteca */
+.Biblioteca-info p{
+    text-align: justify;
+    margin: 20px;
+    justify-content: center;
+    font-size: 1.5vw;
 }
