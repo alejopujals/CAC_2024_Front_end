@@ -11,25 +11,64 @@
     <title>Amigos de Villa Luro</title>
 
     <!-- Favicon -->
-    <!-- Agregar link al favicon -->
+    <link rel="icon" href="./IMG/Favicon-sin-fondo.ico"">
+    <script src="https://kit.fontawesome.com/e5352cd027.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
     <header class="header">
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Quiénes somos</a>
-            <a href="">Deportes</a>
-            <a href="">Villa Luro Solidario</a>
-            <a href="">Biblioteca</a>
-            <a href="./inscripcion.html">Inscribite</a>
+        <nav class="">
+            <a href=""><b>Noticias</b></a>
+            <a href="./quiénes somos.html" target="_blank"><b>Quiénes somos</b></a>
+            <a href="./deportes.html" target="_blank"><b>Deportes</b></a>
+            <a href="./Amigos Solidarios.html" target="_blank"><b>Villa Luro Solidario</b></a>
+            <a href="./biblioteca.html" target="_blank"><b>Biblioteca Pública</b></a>
+            <a href="./formulario.html" target="_blank" class="btn-cac" id="logo"><b>Inscribite &#9997;</b></a>
         </nav>
     </header>
 
     <main>
-        <section id="quienes_somos">
+        <!-- Texto intro -->
+    <div class="Intro-texto">
+        <p>Al pueblo, lo que es del pueblo</p>
+        <p>Asociación Vecinal de Fomento <b>“Los Amigos de Villa Luro”</b> </p>
+        <p>Club vecinal arraigado en el barrio de Villa Luro fundado en 1924</p>
+    </div>
+
+        <!-- Imágenes intro -->
+    <div>
+        <img  src="./IMG/villa-luro posible portada.png" alt="" class="Intro-img" > 
+    </div>   
+    
+        
+        <!-- Últimas noticias -->
+        <section class="noticias">
+                <h2>Nuestras últimas noticias</h2>
+                <!-- División para mostrar las últimas noticias -->
+                <div class="últimas-noticias">
+                    <div class="fútbol-item">
+                        <img src="./IMG/Fútbol1.jpg" alt="" class="fútbol_img">
+                        <div class="fútbol-item-detail">
+                            <h4 class="fútbol-item-detail-title">Superclásico de domingo</h4>
+                            <p class="fútbol-item-detail-info">Gritalo que fue gol! El domingo pasado, nuestros chicos de la primer división de fútbol masculino se enfrentaron a nuestro eterno y clásico rival, el club.... Tras una ardua disputa y un excitante partido, los 3 puntitos quedaron en casa. Felicitaciones a todo el equipo &#128079;. </p>
+                        </div>
+                    </div>
+
+                    <div class="pileta-item">
+                        <img src="./IMG/Pileta techada.jpg" alt="" class="pileta_img">
+                        <div class="pileta-item-detail">
+                            <h4 class="pileta-item-detail-title">Amigos del Natatorio</h4>
+                            <p class="pileta-item-detail-info">Este verano, entre todos, le ganamos al calor! Gracias a la colaboración de todos los socios y vecinos, se logró reacondicionar el natatorio y así, en el comienzo del verano 2024, más de 1000 chicos, amigos y familias pudieron disfrutar y utilizar nuestra pileta e instalaciones. </p>
+                            <p style="margin: 10px;"> <b>&#129309; GRACIAS!! &#129309;</b></p>
+                            <p class="pileta-item-detail-info">Pero ahora vamos por más! Nos tomamos un descansito y partir de junio los esperamos a todos con juegos y actividades recreativas para disfrutar de nuestra pileta techada. </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- <section id="quienes_somos">
             <h3>Quiénes somos</h3>
         </section>
 
@@ -43,11 +82,22 @@
 
         <section id="biblioteca">
             <h3>Biblioteca</h3>
-        </section>
+        </section> -->
 
+    <section>
+        <div class="Ubi">
+    <h3 class="Ubicación"><i class="fa-solid fa-map-pin fa-bounce" style="color: #6d0313;"></i>¿Dónde estamos?</h3>
+    <iframe class="Ubicación_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.635916818293!2d-58.502700825572596!3d-34.638639859341126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b101010d97%3A0x1e0f01fd47a2b470!2sAsociaci%C3%B3n%20Vecinal%20de%20Fomento%20Los%20Amigos%20de%20Villa%20Luro!5e0!3m2!1ses!2sar!4v1714695634167!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
     </main>
 
-    <footer>
+    <footer id="footer">
+        <a href="">&#10068; Preguntas frecuentes</a>
+        <a href="mailto:someone@example.com"">&#128231; Envianos tu inquietud u opinión</a>
+        <a href="">&#128383;  Contactate con nosotros</a>
+        <a href="https://www.facebook.com/AmigosDeVillaLuro/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook" style="color: #afafb1;"></i>Amigos de Villa Luro</a>
+        <a href="https://www.instagram.com/asocamigosdevillaluro/?hl=es" target="_blank"><i class="fa-brands fa-instagram" style="color: #afafb1;"></i>Me gusta Villa Luro</a>
     </footer>
 </body>
 
