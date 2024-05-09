@@ -59,7 +59,7 @@
                 <label for="dni" class="formulario__label">DNI</label>
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
-                    <input type="number" class="formulario__input" id="dni" name="dni" min="10000000" required>
+                    <input type="number" class="formulario__input" id="dni" name="dni" min="6000000">
                     <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Atención: El DNI solo puede contener números (no agregar puntos)</p>
@@ -83,7 +83,7 @@
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
                     <input type="email" class="formulario__input" id="correo" name="correo"
-                        placeholder="email@email.com" required>
+                        placeholder="email@email.com">
                     <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Atención: Introduce un e-mail válido (solo puede contener letras, números, puntos, guiones y guión bajo. Debe contener @ y punto).</p>
@@ -94,8 +94,7 @@
                 <label for="telefono" class="formulario__label">Teléfono</label>
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
-                    <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="11 xxxx xxxx"
-                        required>
+                    <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="11 xxxx xxxx">
                     <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Atención: Solo puede contener números. No incluir espacios ni guiones.</p>
@@ -138,7 +137,7 @@
                 <label for="imagen" class="formulario__label">Adjuntá tu DNI</label>
                 <!-- Encierro dentro de un 'div' el input y el ícono -->
                 <div class="formulario__grupo-input">
-                    <input type="file" class="formulario__input" id="imagen" name="imagen" required>
+                    <input type="file" class="formulario__input" id="imagen" name="imagen">
                     <i class="formulario__validadcion-estado fa-solid fa-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Adjuntá una foto del frente de tu DNI</p>
@@ -158,7 +157,7 @@
                     completados correctamente!</p>
             </div>
 
-            <!-- Botones enviar / borrar -->
+            <!-- Botones de confirmación de inscripción -->
             <div class="formulario__grupo formulario__grupo-btn-enviar">
                 <button type="submit" class="formulario__btn">Confirmar inscripción</button>
                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Tu inscripción se ha realizado
@@ -167,8 +166,6 @@
 
         </form>
     </main>
-
-    <footer></footer>
 
     <!-- Script de JS para la validación de los inputs -->
     <script src="./js/script.js"></script>
@@ -180,8 +177,8 @@
         <a href="">&#10068; Preguntas frecuentes</a>
         <a href="mailto:someone@example.com"">&#128231; Envianos tu inquietud u opinión</a>
         <a href="">&#128383;  Contactate con nosotros</a>
-        <a href="https://www.facebook.com/AmigosDeVillaLuro/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook" style="color: #afafb1;"></i>Amigos de Villa Luro</a>
-        <a href="https://www.instagram.com/asocamigosdevillaluro/?hl=es" target="_blank"><i class="fa-brands fa-instagram" style="color: #afafb1;"></i>Me gusta Villa Luro</a>
+        <a href="https://www.facebook.com/AmigosDeVillaLuro/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook" style="color: #afafb1;"></i></a>
+        <a href="https://www.instagram.com/asocamigosdevillaluro/?hl=es" target="_blank"><i class="fa-brands fa-instagram" style="color: #afafb1;"></i></a>
     </footer>
 
 </body>

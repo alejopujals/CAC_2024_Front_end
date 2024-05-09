@@ -40,7 +40,7 @@ main {
 
 #footer {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 15px;
     opacity: .8;
 }
 
@@ -57,8 +57,8 @@ main {
 #footer a:hover {
     text-decoration: underline;
     color: var(--bg-color);
+    font-size: large;
 }
-
 
 /* Estilo del header */
 .header {
@@ -69,7 +69,7 @@ main {
     left: 0px;
     width: 100%;
     z-index: 9999;
-    padding: 20px;
+    padding: 15px;
     opacity: .8;
 }
 
@@ -89,7 +89,6 @@ nav{
     color: black;
     cursor: pointer; /*aparece manito*/
     text-align: center;
-
 }
 
 #logo:hover {
@@ -274,11 +273,9 @@ nav{
     }
 }
 
-/*----------------------- Aquí terminan losEstilos del formulario de inscripción -------------------*/
-
+/*---------------------- Aquí terminan los Estilos del formulario de inscripción -------------------*/
 
 /* Estilos Home. Portada */
-
 .Intro-texto {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -290,18 +287,15 @@ nav{
 .Intro-img{
     width: 100%;
     border-radius: 15px;
-
 }
 
 
 /* Estilos para Home. Últimas noticias */
-
 .noticias {
     margin: auto;
     text-align: center;
     margin-top: 20px;
     justify-content: center;
-
   }
 
 .noticias h2{
@@ -377,7 +371,6 @@ nav{
 }
 
 /* Estilos Home. Ubicación. Mapas */
-
 .Ubi {
     display: flex;
 }
@@ -396,7 +389,6 @@ nav{
 }
 
 /* Estilo página Quiénes somos */
-
 .Info-club {
     display: flex;
     text-align: justify;
@@ -406,7 +398,6 @@ nav{
 
 
 /* Estilos página Deportes */
-
 .deportes {
     display: flex;
     flex-wrap: wrap;
