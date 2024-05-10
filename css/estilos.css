@@ -43,6 +43,8 @@ main {
     background-color: var(--primary-color);
     padding: 15px;
     opacity: .8;
+    width: 100%;
+    bottom: 0;
 }
 
 #footer a {
@@ -58,7 +60,6 @@ main {
 #footer a:hover {
     text-decoration: underline;
     color: var(--bg-color);
-    font-size: large;
 }
 
 /* Estilo del header */
@@ -84,12 +85,12 @@ nav{
 }
 
 /* Estilo del botón "Inscribite" del header */
-.btn-cac{
+.btn-inscripcion{
     background-color: var(--bg-color);
     padding: 10px;
     border-radius: 3px;
     color: black;
-    cursor: pointer; /*aparece manito*/
+    cursor: pointer; /* Hace aparecer la manito */
     text-align: center;
 }
 
@@ -282,8 +283,7 @@ nav{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 1.5vw;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin: 15px auto;
 }
 
 .Intro-img{
