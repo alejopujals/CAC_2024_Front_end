@@ -27,9 +27,10 @@ a {
     text-decoration: none;
 }
 
- a:hover {
+a:hover {
     text-decoration: underline;
     color: var(--bg-color);
+    font-weight: 900;
 }
 
 main {
@@ -49,7 +50,6 @@ main {
 
 #footer a {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2vw;
     color: white;
     cursor: pointer;
     padding-left: 45px;
@@ -78,19 +78,20 @@ main {
 }
 
 /* Estilo para la barra de navegación */
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Estilo del botón "Inscribite" del header */
-.btn-inscripcion{
+.btn-inscripcion {
     background-color: var(--bg-color);
     padding: 10px;
     border-radius: 3px;
     color: black;
-    cursor: pointer; /* Hace aparecer la manito */
+    cursor: pointer;
+    /* Hace aparecer la manito */
     text-align: center;
 }
 
@@ -99,11 +100,28 @@ nav{
     text-decoration: none;
     color: black;
 }
- @keyframes tilt-n-move-shaking {
-     0% { transform: translate(0, 0) rotate(0deg); }
-     25% { transform: translate(5px, 5px) rotate(5deg); }
-     50% { transform: translate(0, 0) rotate(0deg); } 75% { transform: translate(-5px, 5px) rotate(-5deg); }
-     100% { transform: translate(0, 0) rotate(0deg); } }
+
+@keyframes tilt-n-move-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
 
 
 /*----------------------- Estilos del formulario de inscripción -------------------*/
@@ -248,7 +266,7 @@ nav{
 }
 
 .formulario__grupo-incorrecto .formulario__validadcion-estado {
-    color:  var(--error-color);
+    color: var(--error-color);
     opacity: 1;
 }
 
@@ -270,6 +288,7 @@ nav{
     .formulario__grupo-btn-enviar {
         grid-column: 1;
     }
+
     /* Botón de un 100% de la pantalla de ancho */
     .formulario__btn {
         width: 100%;
@@ -286,11 +305,10 @@ nav{
     margin: 15px auto;
 }
 
-.Intro-img{
+.Intro-img {
     width: 100%;
     border-radius: 3px;
 }
-
 
 /* Estilos para Home. Últimas noticias */
 .noticias {
@@ -298,9 +316,9 @@ nav{
     text-align: center;
     margin-top: 20px;
     justify-content: center;
-  }
+}
 
-.noticias h2{
+.noticias h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2vw;
     background-color: var(--primary-color);
@@ -310,14 +328,14 @@ nav{
     border-radius: 3px;
 }
 
-.últimas-noticias{
+.últimas-noticias {
     display: flex;
     text-align: center;
     justify-content: center;
     margin: 20px;
 }
 
-.fútbol-item{
+.fútbol-item {
     width: 300%;
     height: 100%;
     background-color: #fff;
@@ -327,7 +345,7 @@ nav{
     margin: 10px;
 }
 
-.fútbol_img{
+.fútbol_img {
     width: 100%;
     /* height: 45%; */
     border-radius: 3px;
@@ -345,7 +363,7 @@ nav{
     font-size: 1.2vw;
 }
 
-.pileta-item{
+.pileta-item {
     width: 300%;
     background-color: #fff;
     border-radius: 3px;
@@ -354,7 +372,7 @@ nav{
     margin: 10px;
 }
 
-.pileta_img{
+.pileta_img {
     width: 100%;
     border-radius: 3px;
 }
@@ -389,15 +407,6 @@ nav{
     height: 250px
 }
 
-/* Estilo página "Quiénes somos" */
-.Info-club {
-    display: flex;
-    text-align: justify;
-    font-size: 1.5vw;
-    margin: 20px 0 0 0;
-}
-
-
 /* Estilos página "Deportes" */
 .deportes {
     display: flex;
@@ -412,7 +421,7 @@ nav{
     margin: 2px 0 2px 0;
 }
 
-.deportes a{
+.deportes a {
     text-decoration: none;
 }
 
@@ -421,86 +430,73 @@ h5 {
     text-decoration: none;
     margin: 2px 0 2px 0;
 }
+
 h5:hover {
     color: var(--ok-color);
 }
 
-
-.fútbol {
-    width: 300%;
+.cuadro_deporte {
+    width: 100%;
     background-color: var(--primary-color-low-alpha);
     border-radius: 3px;
     box-shadow: 0 3px 10px;
     padding: 20px;
-    margin: 10px;
-}
-
-.voley {
-    width: 300%;
-    background-color: var(--primary-color-low-alpha);
-    border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin: 10px;
-}
-
-.natación {
-    width: 300%;
-    background-color: var(--primary-color-low-alpha);
-    border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin: 10px;
-}
-
-.patín {
-    width: 300%;
-    background-color: var(--primary-color-low-alpha);
-    border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin: 10px;
-}
-
-.gimnasia {
-    width: 300%;
-    background-color: var(--primary-color-low-alpha);
-    border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin: 10px;
-}
-
-.musculación{
-    width: 300%;
-    background-color: var(--primary-color-low-alpha);
-    border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin: 10px;
-}
-
-.danzas{
-    width: 300%;
-    background-color: var(--primary-color-low-alpha);
-    border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin: 10px;
-}
-
-/* Estilos página Amigos solidarios */
-.Solidarios-info p{
-    text-align: justify;
-    margin: 20px;
-    justify-content: center;
-    font-size: 1.5vw;
+    margin-bottom: 30px;
 }
 
 /* Estilos página Biblioteca */
-.Biblioteca-info p{
+.Biblioteca-info p {
     text-align: justify;
     margin: 20px;
     justify-content: center;
     font-size: 1.5vw;
+}
+
+/* ----- Estilo página "Quiénes somos" ----- */
+.Info-club {
+    width: 100%;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #727272;
+    text-align: justify;
+    margin: 20px auto;
+    padding: 10px 10px 20px;
+    line-height: 25px;
+}
+
+.Info-club h2 {
+    margin-bottom: 15px;
+}
+
+#titulo_autoridades {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.tarjeta {
+    width: 200px;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #727272;
+    margin: 20px;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.textocard {
+    padding: 10px;
+}
+
+.contenedor_autoridades p {
+    padding: 0px 0px;
+}
+
+.contenedor_autoridades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
