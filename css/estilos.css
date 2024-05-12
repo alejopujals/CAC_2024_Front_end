@@ -16,7 +16,7 @@
 }
 
 body {
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
 }
@@ -311,82 +311,59 @@ nav {
 }
 
 /* Estilos para Home. Últimas noticias */
-.noticias {
+#noticias {
     margin: auto;
     text-align: center;
     margin-top: 20px;
     justify-content: center;
 }
 
-.noticias h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2vw;
+#noticias-titulo {
     background-color: var(--primary-color);
-    padding: 10px;
     opacity: .8;
     color: white;
+    border: 2px solid var(--primary-color);
     border-radius: 3px;
+    box-shadow: 0 0 10px #727272;
+    padding: 15px;
+    margin: 10px;
 }
 
 .últimas-noticias {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 20px;
-}
-
-.fútbol-item {
-    width: 300%;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
     margin: 10px;
 }
 
-.fútbol_img {
+.noticia-item {
+    width: 300%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #727272;
+    padding: 10px 10px 20px;
+    margin: 10px;
+}
+
+.noticia_img {
     width: 100%;
+    height: 100%;
     /* height: 45%; */
     border-radius: 3px;
 }
 
-.fútbol-item-detail-title {
-    margin: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+.noticia-item-detail{
+    padding: 10px;
 }
 
-.fútbol-item-detail-info {
+.noticia-item-detail-title {
+    margin: 10px;
+}
+
+.noticia-item-detail-info {
     text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2vw;
-}
-
-.pileta-item {
-    width: 300%;
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin: 10px;
-}
-
-.pileta_img {
-    width: 100%;
-    border-radius: 3px;
-}
-
-.pileta-item-detail-title {
-    margin: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
-}
-
-.pileta-item-detail-info {
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2vw;
 }
 
 /* Estilos Home. Ubicación. Mapas */
@@ -417,8 +394,10 @@ nav {
     flex-direction: row;
 }
 
-.deportes h3 {
-    margin: 2px 0 2px 0;
+.titulo_deportes {
+    margin: 10px auto;
+    text-align: center;
+    color: black;
 }
 
 .deportes a {
@@ -437,11 +416,12 @@ h5:hover {
 
 .cuadro_deporte {
     width: 100%;
-    background-color: var(--primary-color-low-alpha);
+    background-color: white;
+    border: 2px solid var(--primary-color);
     border-radius: 3px;
-    box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin-bottom: 30px;
+    box-shadow: 0 0 10px #727272;
+    padding: 10px 10px 20px;
+    margin: 20px auto;
 }
 
 /* Estilos página Biblioteca */
@@ -462,7 +442,7 @@ h5:hover {
     text-align: justify;
     margin: 20px auto;
     padding: 10px 10px 20px;
-    line-height: 25px;
+    line-height: 25px; /* es el interlineado */
 }
 
 .Info-club h2 {
