@@ -298,16 +298,31 @@ nav {
 /*---------------------- Aquí terminan los Estilos del formulario de inscripción -------------------*/
 
 /* Estilos Home. Portada */
-.Intro-texto {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 1.5vw;
-    margin: 15px auto;
+#intro {
+    background-image: url('../IMG/villa-luro\ posible\ portada.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.3);
+    margin: 20px auto;
 }
 
-.Intro-img {
-    width: 100%;
-    border-radius: 3px;
+.titulos_portada {
+    font-size: x-large;
+    color: white;
+    text-align: center;
+}
+
+#tp1 {
+    padding: 20px 0 0 0;
+}
+
+#tp2 {
+    padding: 80px 0 0 0;
+}
+
+#tp4 {
+    padding: 200px 0 0 0;
 }
 
 /* Estilos para Home. Últimas noticias */
@@ -319,9 +334,10 @@ nav {
 }
 
 #noticias-titulo {
-    background-color: var(--primary-color);
+    text-align: center;
+    background-color: white;
     opacity: .8;
-    color: white;
+    color: black;
     border: 2px solid var(--primary-color);
     border-radius: 3px;
     box-shadow: 0 0 10px #727272;
@@ -348,10 +364,14 @@ nav {
 }
 
 .noticia_img {
-    width: 100%;
-    height: 100%;
-    /* height: 45%; */
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 10px #727272;
     border-radius: 3px;
+    /* height: 45%; */
 }
 
 .noticia-item-detail{
@@ -420,8 +440,8 @@ h5:hover {
     border: 2px solid var(--primary-color);
     border-radius: 3px;
     box-shadow: 0 0 10px #727272;
-    padding: 10px 10px 20px;
-    margin: 20px auto;
+    padding: 10px;
+    margin: 10px auto;
 }
 
 /* Estilos página Biblioteca */
@@ -451,7 +471,7 @@ h5:hover {
 
 #titulo_autoridades {
     text-align: center;
-    margin: 10px auto;
+    margin: 20px auto 10px;
 }
 
 .tarjeta {
@@ -464,6 +484,8 @@ h5:hover {
 
 .tarjeta img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
 
