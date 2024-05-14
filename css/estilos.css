@@ -16,7 +16,7 @@
 }
 
 body {
-    margin: 20px 0 0 0;
+    margin: 25px 0 0 0;
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
 }
@@ -81,18 +81,19 @@ main {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* Estilo del botón "Inscribite" del header */
 .btn-inscripcion {
-    background-color: var(--bg-color);
+    background-color: white;
     padding: 10px;
-    border-radius: 3px;
     color: black;
     cursor: pointer;
-    /* Hace aparecer la manito */
     text-align: center;
+    border: 2px solid var(--bg-color);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #962732;
 }
 
 #logo:hover {
@@ -333,7 +334,7 @@ nav {
     justify-content: center;
 }
 
-#noticias-titulo {
+.noticias-titulo {
     text-align: center;
     background-color: white;
     opacity: .8;
@@ -342,7 +343,7 @@ nav {
     border-radius: 3px;
     box-shadow: 0 0 10px #727272;
     padding: 15px;
-    margin: 10px;
+    margin-top: 30px;
 }
 
 .últimas-noticias {
@@ -388,21 +389,19 @@ nav {
 }
 
 /* Estilos Home. Ubicación. Mapas */
-.Ubi {
-    display: flex;
+#ubi {
+    justify-content: center;
 }
 
-.Ubicación {
-    margin: 30px;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+.ubicación {
+    margin: 10px;
+    text-align: center;
 }
 
-.Ubicación_mapa {
-    margin-top: 30px;
-    width: 250px;
-    height: 250px
+#ubicación_mapa {
+    padding: 10px auto;
+    width: 100%;
+    height: 250px;
 }
 
 /* Estilos página "Deportes" */
