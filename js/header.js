@@ -4,7 +4,6 @@ let miHeader = `
             <a href="./index.html">Noticias</a>
             <a href="./quiénes somos.html">Quiénes somos</a>
             <a href="./deportes.html">Deportes</a>
-            <a href="./biblioteca.html">Biblioteca Pública</a>
             <a href="./formulario.html" target="_blank" class="btn-inscripcion" id="logo">Inscribite &#9997;</a>
 </nav>
 `

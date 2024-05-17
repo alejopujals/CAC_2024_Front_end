@@ -280,7 +280,7 @@ nav {
 
 /* Mediaqueries (modificación de acuerdo al tamaño de la pantalla) */
 /* Para pantallas de menos de 800px de ancho, determino que se vea 1 sola columna */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     .formulario {
         grid-template-columns: 1fr;
     }
@@ -295,6 +295,10 @@ nav {
     /* Botón de un 100% de la pantalla de ancho */
     .formulario__btn {
         width: 100%;
+    }
+
+    .cuadro_deporte {
+        grid-column: 1/4;
     }
 }
 
@@ -406,14 +410,20 @@ nav {
     height: 250px;
 }
 
-/* Estilos página "Deportes" */
-.deportes {
-    display: flex;
-    flex-wrap: wrap;
+/* ----- Estilos página "Deportes" ----- */
+#titulo_principal_deportes {
     text-align: center;
-    justify-content: center;
     margin: 20px;
-    flex-direction: row;
+    grid-column: 1/4;
+}
+
+/* Grid del contenedor de deportes */
+#contenedor_deportes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    margin: 20px;
 }
 
 .titulo_deportes {
@@ -440,16 +450,6 @@ nav {
     color: var(--primary-color);
 }
 
-h5 {
-    color: var(--primary-color);
-    text-decoration: none;
-    margin: 2px 0 2px 0;
-}
-
-h5:hover {
-    color: var(--ok-color);
-}
-
 .cuadro_deporte {
     width: 100%;
     background-color: white;
@@ -458,6 +458,7 @@ h5:hover {
     box-shadow: 0 0 10px #727272;
     padding: 10px;
     margin: 10px auto;
+    text-align: justify;
 }
 
 /* Estilos página Biblioteca */
