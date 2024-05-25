@@ -281,7 +281,8 @@ main {
 }
 
 /* Mediaqueries (modificación de acuerdo al tamaño de la pantalla) */
-/* Para pantallas de menos de 800px de ancho, determino que se vea 1 sola columna */
+/* Pantallas tamaño CELULAR */
+/* Para pantallas de menos de 767px de ancho, determino que se vea 1 sola columna */
 @media screen and (max-width: 767px) {
     .formulario {
         grid-template-columns: 1fr;
@@ -326,6 +327,10 @@ main {
         display: none;
     }
 
+}
+
+/* Pantallas tamaño TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
 }
 
 /*---------------------- Aquí terminan los Estilos del formulario de inscripción -------------------*/
@@ -443,11 +448,12 @@ main {
     height: 250px;
     background-color: white;
     border: 2px solid var(--primary-color);
-    border-radius: 6px;
     box-shadow: 0 0 10px #727272;
-    padding: 60px;
-    text-align: center;
-    font-size: 15px
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
 }
 
 #ubi {
